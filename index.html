@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ovqat Hazm Bo‘lish Sarguzashti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game">
+
+    <header class="header">
+        <div>
+            <p class="mini-title">BIOLOGIYA • INTERAKTIV O‘YIN</p>
+            <h1>Ovqat Hazm Bo‘lish Sarguzashti</h1>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span>⭐</span>
+                <b id="score">0</b>
+            </div>
+
+            <div class="stat">
+                <span>❤️</span>
+                <b id="lives">3</b>
+            </div>
+        </div>
+    </header>
+
+    <div class="progress-box">
+        <div class="progress-info">
+            <span id="stageName">1 / 7 — Og‘iz</span>
+            <span id="progressText">0%</span>
+        </div>
+
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="body-map">
+
+            <div class="map-title">
+                <span>🧬</span>
+                Ovqatning organizmdagi yo‘li
+            </div>
+
+            <div class="system">
+
+                <div class="organ active" data-organ="0">
+                    <div class="organ-icon">👄</div>
+                    <div>
+                        <strong>Og‘iz</strong>
+                        <small>So‘lak</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="1">
+                    <div class="organ-icon">⬇️</div>
+                    <div>
+                        <strong>Qizilo‘ngach</strong>
+                        <small>Harakat</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="2">
+                    <div class="organ-icon">🥣</div>
+                    <div>
+                        <strong>Oshqozon</strong>
+                        <small>Aralashtirish</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="3">
+                    <div class="organ-icon">〰️</div>
+                    <div>
+                        <strong>Ingichka ichak</strong>
+                        <small>So‘rilish</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="4">
+                    <div class="organ-icon">🌀</div>
+                    <div>
+                        <strong>Yo‘g‘on ichak</strong>
+                        <small>Suv so‘rilishi</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="5">
+                    <div class="organ-icon">🔄</div>
+                    <div>
+                        <strong>To‘g‘ri ichak</strong>
+                        <small>Saqlash</small>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="organ" data-organ="6">
+                    <div class="organ-icon">🚪</div>
+                    <div>
+                        <strong>Anal teshik</strong>
+                        <small>Chiqish</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="game-card">
+
+            <div class="food-animation">
+                <div class="food" id="food">🍎</div>
+                <div class="particle p1"></div>
+                <div class="particle p2"></div>
+                <div class="particle p3"></div>
+            </div>
+
+            <div class="question-number" id="questionNumber">
+                BOSQICH 1
+            </div>
+
+            <h2 id="questionTitle">
+                Oziq-ovqat og‘izga kirdi!
+            </h2>
+
+            <p class="description" id="description">
+                Avval oziq-ovqat og‘izda so‘lak bilan aralashadi.
+                Endi to‘g‘ri javobni tanla.
+            </p>
+
+            <div class="answers" id="answers"></div>
+
+            <div class="message" id="message"></div>
+
+        </section>
+
+    </main>
+
+    <div class="bottom-info">
+        <span>💡 Har bir to‘g‘ri javob: +10 ball</span>
+        <span>🎯 Maqsad: ovqatning butun hazm yo‘lini yakunlash</span>
+    </div>
+
+</div>
+
+<div class="result-screen" id="resultScreen">
+
+    <div class="result-card">
+
+        <div class="trophy">🏆</div>
+
+        <p class="mini-title">SARGUZASHT YAKUNLANDI</p>
+
+        <h2>Hazm tizimi bo‘yicha natijang</h2>
+
+        <div class="final-score">
+            <span id="finalScore">0</span>
+            <small>ball</small>
+        </div>
+
+        <p id="resultText"></p>
+
+        <button id="restartBtn">
+            🔄 Qaytadan o‘ynash
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
